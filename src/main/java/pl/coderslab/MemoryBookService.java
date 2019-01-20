@@ -1,11 +1,13 @@
 package pl.coderslab;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Qualifier("MemoryBookService")
 public class MemoryBookService implements BookService {
     private List<Book> list;
 
